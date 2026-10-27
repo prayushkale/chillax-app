@@ -2,9 +2,12 @@
 
 > *chill* + *relax*. **You are the stakeholder. Chillax runs the company.**
 
+[![Site](https://img.shields.io/badge/site-chillax.prayush.dev-4fd1b0?style=flat-square)](https://chillax.prayush.dev)
+[![Sponsor](https://img.shields.io/badge/sponsor-%E2%9D%A4-ea4aaa?style=flat-square&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/prayushkale)
+
 [![Watch the 45-second Chillax ad](media/poster.jpg)](media/chillax-ad-45s.mp4)
 
-▶ **[Watch the 45-second ad](media/chillax-ad-45s.mp4)** · **[Watch the full 5-minute walkthrough](https://github.com/prayushkale/chillax-app/releases/latest)**
+▶ **[Watch the 45-second ad](media/chillax-ad-45s.mp4)** · **[Watch the full 5-minute walkthrough](https://youtu.be/JM8bb7nm5D4)**
 
 Chillax is a terminal-first manager for an AI product team. You don't babysit a coding
 agent. You hire a team of them: a project manager, developers, a tech lead and QA. They plan, build,
@@ -103,10 +106,17 @@ themes and plugins, and hardening work such as budgets and crash recovery.
 ## Demos
 
 - **[45-second ad](media/chillax-ad-45s.mp4)**
-- **[Full walkthrough (5 min)](https://github.com/prayushkale/chillax-app/releases/latest)**:
+- **[Full walkthrough (5 min)](https://youtu.be/JM8bb7nm5D4)**:
   setup, planning with the PM, hiring, the sprint gate, the dev loop, the live view,
-  QA, the release gate and the finished project. Captions are included as an `.srt` file.
+  QA, the release gate and the finished project. Captions are included as an
+  [`.srt` file](media/chillax-demo-full.srt).
 
 ## Follow along
 
 Star ⭐ or watch 👀 this repository to hear when the source is published.
+More at [chillax.prayush.dev](https://chillax.prayush.dev).
+
+## Support
+
+Chillax is an independent project. If it's useful to you, or you want to see
+the source open sooner, you can [sponsor the work on GitHub](https://github.com/sponsors/prayushkale) 💚.

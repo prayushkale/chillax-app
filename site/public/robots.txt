@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chillax.prayush.dev/sitemap.xml

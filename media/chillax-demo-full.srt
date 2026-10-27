@@ -1,0 +1,443 @@
+1
+00:00:03,950 --> 00:00:06,580
+This is Chillax. Chill,
+
+2
+00:00:06,590 --> 00:00:10,020
+plus relax. It's a terminal first manager for
+
+3
+00:00:10,030 --> 00:00:11,620
+an AI product team.
+
+4
+00:00:11,630 --> 00:00:13,540
+You hire agent employees,
+
+5
+00:00:13,550 --> 00:00:15,380
+each backed by a coding agent,
+
+6
+00:00:15,390 --> 00:00:18,740
+like Claude Code. You talk to a project manager,
+
+7
+00:00:18,750 --> 00:00:21,700
+and you stay where a real stakeholder stays,
+
+8
+00:00:21,710 --> 00:00:24,340
+approving sprints and releases while the team
+
+9
+00:00:24,350 --> 00:00:27,520
+does the work. Let's build something real.
+
+10
+00:00:28,677 --> 00:00:31,627
+We'll start from a plan already written with Claude,
+
+11
+00:00:31,637 --> 00:00:33,787
+a LinkedIn recommendation app.
+
+12
+00:00:33,797 --> 00:00:36,987
+In any Git folder, type Chillax.
+
+13
+00:00:36,997 --> 00:00:39,147
+The first run sets everything up.
+
+14
+00:00:39,157 --> 00:00:40,507
+You get a dashboard,
+
+15
+00:00:40,517 --> 00:00:43,787
+a team view, chat, a Kanban board,
+
+16
+00:00:43,797 --> 00:00:46,027
+a live feed of agent activity,
+
+17
+00:00:46,037 --> 00:00:48,907
+dev, QA, and production environments,
+
+18
+00:00:48,917 --> 00:00:51,067
+an inbox, and usage.
+
+19
+00:00:51,077 --> 00:00:53,707
+Only one person is on the team so far,
+
+20
+00:00:53,717 --> 00:00:56,107
+a project manager, hired for you.
+
+21
+00:00:56,117 --> 00:00:59,147
+In Settings, you choose the default coding agent
+
+22
+00:00:59,157 --> 00:01:01,447
+and model for every new hire.
+
+23
+00:01:02,521 --> 00:01:04,751
+Now, the stakeholder meeting.
+
+24
+00:01:04,761 --> 00:01:08,191
+Open chat with the PM and point it at the plan.
+
+25
+00:01:08,201 --> 00:01:11,391
+It reads the plan, creates epics and stories with
+
+26
+00:01:11,401 --> 00:01:12,751
+acceptance criteria,
+
+27
+00:01:12,761 --> 00:01:14,991
+and groups them into a sprint.
+
+28
+00:01:15,001 --> 00:01:17,551
+It also hires the people it needs:
+
+29
+00:01:17,561 --> 00:01:19,311
+a tech lead, developers,
+
+30
+00:01:19,321 --> 00:01:23,151
+a QA engineer. The PM runs the team.
+
+31
+00:01:23,161 --> 00:01:24,971
+You run the vision.
+
+32
+00:01:26,125 --> 00:01:28,515
+The first gate lands in your inbox.
+
+33
+00:01:28,525 --> 00:01:30,195
+Approve the sprint.
+
+34
+00:01:30,205 --> 00:01:33,475
+Press A or click. Until you do,
+
+35
+00:01:33,485 --> 00:01:35,555
+no agent touches the code.
+
+36
+00:01:35,565 --> 00:01:38,195
+Once you approve, the developers pick up their
+
+37
+00:01:38,205 --> 00:01:40,575
+assigned tickets on their own.
+
+38
+00:01:41,632 --> 00:01:44,822
+Here's the loop. Every ticket gets its own Git
+
+39
+00:01:44,832 --> 00:01:46,182
+worktree and branch,
+
+40
+00:01:46,192 --> 00:01:48,102
+so agents never collide,
+
+41
+00:01:48,112 --> 00:01:50,502
+and your checkout stays untouched.
+
+42
+00:01:50,512 --> 00:01:51,942
+A developer builds,
+
+43
+00:01:51,952 --> 00:01:53,702
+Chillax runs the tests,
+
+44
+00:01:53,712 --> 00:01:55,862
+and the tech lead reviews the diff.
+
+45
+00:01:55,872 --> 00:01:58,342
+Approved work merges into dev.
+
+46
+00:01:58,352 --> 00:02:01,862
+Then, QA checks every acceptance criterion.
+
+47
+00:02:01,872 --> 00:02:04,822
+On the board, you watch each ticket move.
+
+48
+00:02:04,832 --> 00:02:06,822
+In progress, review,
+
+49
+00:02:06,832 --> 00:02:10,822
+QA, done. Every comment and decision is kept on
+
+50
+00:02:10,832 --> 00:02:12,002
+the ticket.
+
+51
+00:02:13,072 --> 00:02:16,422
+Watch it your way. The Live tab streams every
+
+52
+00:02:16,432 --> 00:02:19,782
+tool call. The Team tab shows each employee in
+
+53
+00:02:19,792 --> 00:02:22,262
+a grid, and you can chat with any of them for
+
+54
+00:02:22,272 --> 00:02:26,102
+status. The usage tab breaks down tokens and cost,
+
+55
+00:02:26,112 --> 00:02:28,342
+per ticket and per employee.
+
+56
+00:02:28,352 --> 00:02:32,582
+The same views are in your browser on port 4747.
+
+57
+00:02:32,592 --> 00:02:35,302
+And when an agent runs an app in its worktree,
+
+58
+00:02:35,312 --> 00:02:36,902
+it appears on the dashboard,
+
+59
+00:02:36,912 --> 00:02:38,822
+so you see real progress,
+
+60
+00:02:38,832 --> 00:02:40,402
+not just reports.
+
+61
+00:02:41,561 --> 00:02:44,111
+Not every job needs the same model.
+
+62
+00:02:44,121 --> 00:02:47,231
+For any hire, you can swap the coding agent,
+
+63
+00:02:47,241 --> 00:02:49,471
+the model, and the effort.
+
+64
+00:02:49,481 --> 00:02:51,711
+A lighter model for QA,
+
+65
+00:02:51,721 --> 00:02:54,091
+the strongest one for development.
+
+66
+00:02:55,160 --> 00:02:57,310
+Plans change mid-sprint.
+
+67
+00:02:57,320 --> 00:02:59,150
+File a request anytime,
+
+68
+00:02:59,160 --> 00:03:01,950
+and it becomes a work item for the right person.
+
+69
+00:03:01,960 --> 00:03:04,990
+Mark it high priority and it goes to the front.
+
+70
+00:03:05,000 --> 00:03:06,910
+Agents flag things too.
+
+71
+00:03:06,920 --> 00:03:10,510
+If one is stuck, say it needs a real API key.
+
+72
+00:03:10,520 --> 00:03:12,430
+It lands in your inbox.
+
+73
+00:03:12,440 --> 00:03:15,150
+Answer it or chat with the agent directly.
+
+74
+00:03:15,160 --> 00:03:17,950
+And when the tech lead finds problems in review,
+
+75
+00:03:17,960 --> 00:03:21,150
+it suggests new stories and who should take them.
+
+76
+00:03:21,160 --> 00:03:24,010
+The PM creates and assigns them.
+
+77
+00:03:25,086 --> 00:03:28,516
+Need to stop? Pause freezes new work.
+
+78
+00:03:28,526 --> 00:03:30,676
+Quit, and nothing is lost,
+
+79
+00:03:30,686 --> 00:03:33,956
+because every state change is an event in a log.
+
+80
+00:03:33,966 --> 00:03:36,996
+Come back and Chillax rebuilds the team,
+
+81
+00:03:37,006 --> 00:03:40,436
+chats, tickets, and inbox exactly where you left
+
+82
+00:03:40,446 --> 00:03:44,096
+them. Resume, and the agents pick up the work.
+
+83
+00:03:45,164 --> 00:03:46,514
+When the sprint is done,
+
+84
+00:03:46,524 --> 00:03:48,274
+the second gate appears.
+
+85
+00:03:48,284 --> 00:03:52,194
+Release approval. Environments shows QA,
+
+86
+00:03:52,204 --> 00:03:55,154
+ready to promote. Approve the version and its
+
+87
+00:03:55,164 --> 00:03:59,074
+notes, and Chillax merges QA into main and tags
+
+88
+00:03:59,084 --> 00:04:02,274
+it. Nothing reaches production without you.
+
+89
+00:04:02,284 --> 00:04:05,074
+Then, the dashboard invites you to plan the next
+
+90
+00:04:05,084 --> 00:04:06,014
+sprint.
+
+91
+00:04:07,174 --> 00:04:08,844
+Here's a second project.
+
+92
+00:04:08,854 --> 00:04:11,564
+I gave the PM about two lines.
+
+93
+00:04:11,574 --> 00:04:15,164
+A directory of free alternatives to paid software.
+
+94
+00:04:15,174 --> 00:04:17,724
+Sprint by sprint, the team built,
+
+95
+00:04:17,734 --> 00:04:20,444
+reviewed, tested, and released it.
+
+96
+00:04:20,454 --> 00:04:22,204
+This is the live site.
+
+97
+00:04:22,214 --> 00:04:24,924
+It isn't perfect, and the next improvement is
+
+98
+00:04:24,934 --> 00:04:26,424
+just another sprint.
+
+99
+00:04:27,565 --> 00:04:29,235
+An honest trade-off.
+
+100
+00:04:29,245 --> 00:04:30,755
+This plans heavily,
+
+101
+00:04:30,765 --> 00:04:33,635
+so it costs more tokens and time than handing
+
+102
+00:04:33,645 --> 00:04:35,715
+one prompt to one agent.
+
+103
+00:04:35,725 --> 00:04:38,035
+In return, you get structure.
+
+104
+00:04:38,045 --> 00:04:40,115
+Every piece of work has a ticket,
+
+105
+00:04:40,125 --> 00:04:42,195
+with the reasoning in its comments.
+
+106
+00:04:42,205 --> 00:04:43,875
+That's what makes it manageable,
+
+107
+00:04:43,885 --> 00:04:45,955
+like an actual organization.
+
+108
+00:04:45,965 --> 00:04:48,915
+Chillax, you are the stakeholder.
+
+109
+00:04:48,925 --> 00:04:50,995
+Chillax runs the company.
+
+110
+00:04:51,005 --> 00:04:55,315
+Follow along at github.com slash prayushkale slash
+
+111
+00:04:55,325 --> 00:04:57,205
+chillax dash app.

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chillax: you are the stakeholder, AI agents run the company</title>
+<meta name="description" content="Chillax is a terminal-first manager for a team of AI coding agents: a PM, developers, a tech lead and QA. You approve the sprint and the release. They do the rest.">
+<link rel="canonical" href="https://chillax.prayush.dev/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0d0f11">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Chillax: you are the stakeholder, AI agents run the company">
+<meta property="og:description" content="A terminal-first manager for a team of AI coding agents. You approve the sprint and the release. They do the rest.">
+<meta property="og:url" content="https://chillax.prayush.dev/">
+<meta property="og:image" content="https://chillax.prayush.dev/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@prayushkale">
+<meta name="twitter:title" content="Chillax: you are the stakeholder, AI agents run the company">
+<meta name="twitter:description" content="A terminal-first manager for a team of AI coding agents. You approve the sprint and the release. They do the rest.">
+<meta name="twitter:image" content="https://chillax.prayush.dev/og-image.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Chillax",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "macOS, Linux",
+  "url": "https://chillax.prayush.dev/",
+  "description": "A terminal-first manager for a team of AI coding agents.",
+  "author": { "@type": "Person", "name": "Prayush Kale", "url": "https://prayush.dev/" }
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top wrap">
+  <a class="mark" href="/" aria-label="Chillax home">chillax</a>
+  <nav aria-label="Primary">
+    <a href="#demo">Demo</a>
+    <a href="#gates">How it works</a>
+    <a class="gh" href="https://github.com/prayushkale/chillax-app">GitHub</a>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero wrap">
+    <h1>You are the stakeholder. <span class="dim">Chillax runs the company.</span></h1>
+    <p class="lede">A terminal manager for a team of AI coding agents. You hire a project manager, developers, a tech lead and QA. They plan, build, review, test and release. You approve the sprint and the release.</p>
+    <div class="ctas">
+      <a class="btn primary" href="https://github.com/prayushkale/chillax-app">Star on GitHub</a>
+      <a class="btn" href="#demo">Watch the 5-minute demo</a>
+    </div>
+    <p class="note">Source is private while rough edges get fixed. Star or watch the repo to hear when it opens.</p>
+  </section>
+
+  <section class="reel wrap" aria-label="45-second ad">
+    <figure class="term">
+      <div class="term-bar"><span></span><span></span><span></span><code>~/my-app $ chillax</code></div>
+      <video id="ad" src="/media/ad-720.mp4" poster="/media/poster.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      <button class="sound" id="sound" type="button" aria-pressed="false">Turn sound on</button>
+    </figure>
+  </section>
+
+  <section class="org wrap" aria-labelledby="org-h">
+    <h2 id="org-h">A software company where every employee is a coding agent</h2>
+    <p class="body">Chillax doesn't rebuild a coding agent. It manages the ones you already use. Each hire is an existing agent, driven over the <a href="https://agentclientprotocol.com">Agent Client Protocol</a>, with its own role, policy and model.</p>
+
+    <div class="chart" role="img" aria-label="Org chart: you, then the project manager, then developers, a tech lead and QA">
+      <div class="node you"><b>You</b><span>stakeholder</span></div>
+      <div class="node"><b>Project manager</b><code>claude-code</code></div>
+      <div class="row">
+        <div class="node"><b>Developer</b><code>codex</code></div>
+        <div class="node"><b>Developer</b><code>command-code</code></div>
+        <div class="node"><b>Tech lead</b><code>claude-code</code></div>
+        <div class="node"><b>QA</b><code>claude-code</code></div>
+      </div>
+    </div>
+    <p class="fine">An example team. Each hire can use any supported agent and model.</p>
+
+    <table class="map">
+      <caption>How a real company maps onto Chillax</caption>
+      <thead><tr><th scope="col">In a company</th><th scope="col">In Chillax</th></tr></thead>
+      <tbody>
+        <tr><td>Job description</td><td>A role file: a system prompt plus a policy</td></tr>
+        <tr><td>Employee</td><td>A hired coding agent: Claude Code, Codex, Command Code and others</td></tr>
+        <tr><td>Jira</td><td>A built-in local tracker with epics, stories, bugs and sprints</td></tr>
+        <tr><td>Dev, QA, prod</td><td>Git branches, worktrees and your project's own commands</td></tr>
+        <tr><td>Company handbook</td><td>Chillax's MCP tools, which agents use to follow the process</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="gates wrap" id="gates" aria-labelledby="gates-h">
+    <h2 id="gates-h">Two decisions are yours. The rest runs on its own.</h2>
+    <p class="body">Everything between the gates is the team's job. Nothing starts until you approve the sprint, and nothing ships until you approve the release. Try them.</p>
+
+    <ol class="flow">
+      <li><b>You describe what you want</b><span>a chat with the PM, or a plan you already wrote</span></li>
+      <li><b>The PM plans</b><span>epics, stories, acceptance criteria and a proposed sprint</span></li>
+      <li class="gate" data-gate="sprint">
+        <div><b>Sprint gate</b><span class="state">Waiting on you: 6 tickets proposed for SP-1</span></div>
+        <button type="button">Approve sprint</button>
+      </li>
+      <li><b>Developers build</b><span>one <code>git worktree</code> and branch per ticket, your tests run</span></li>
+      <li><b>The tech lead reviews</b><span>approved diffs merge into <code>dev</code>, your checkout untouched</span></li>
+      <li><b>QA tests</b><span>promotes <code>dev</code> to <code>qa</code>, checks acceptance criteria, files bugs back</span></li>
+      <li class="gate" data-gate="release">
+        <div><b>Release gate</b><span class="state">Waiting on you: v0.1.0 passed QA</span></div>
+        <button type="button">Approve release</button>
+      </li>
+      <li><b>Shipped</b><span><code>qa</code> merges to <code>main</code>, tagged, with release notes</span></li>
+    </ol>
+  </section>
+
+  <section class="pieces wrap" aria-labelledby="pieces-h">
+    <h2 id="pieces-h">What you get</h2>
+    <dl>
+      <div><dt>Hire anyone</dt><dd>Pick the agent and the model per hire. Cheap models for simple tickets, strong ones for review.</dd></div>
+      <div><dt>An inbox for you</dt><dd>Permission requests, questions and both approvals wait in one place, so you only look when you're needed.</dd></div>
+      <div><dt>Watch it live</dt><dd>The same views in the terminal and the browser: board, team, chat, a live feed of every agent's tool calls, and token usage per ticket.</dd></div>
+      <div><dt>A bug loop</dt><dd>QA files bugs as tickets and they go back to a developer, like they would in a real team.</dd></div>
+      <div><dt>Pause, quit, resume</dt><dd>Every change is an event in a local log. Quit any time and the team, chats, tickets and inbox come back where you left them.</dd></div>
+      <div><dt>Ask for changes mid-sprint</dt><dd>New requests become tickets. If an agent gets stuck, it can escalate or hire help.</dd></div>
+    </dl>
+  </section>
+
+  <section class="demo wrap" id="demo" aria-labelledby="demo-h">
+    <h2 id="demo-h">The full walkthrough</h2>
+    <p class="body">Five minutes, from a written plan to a tagged release: planning, hiring, both gates, the dev loop, the live view, QA and a finished project.</p>
+    <div class="yt" id="yt" data-id="JM8bb7nm5D4">
+      <button type="button" class="yt-play" aria-label="Play the 5-minute Chillax walkthrough">
+        <img src="/media/walkthrough.jpg" alt="" width="1280" height="720" loading="lazy">
+        <span>Play the walkthrough</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="tradeoff wrap" aria-labelledby="trade-h">
+    <h2 id="trade-h">The honest trade-off</h2>
+    <p class="big">Chillax plans heavily, so it uses more tokens and more time than handing one prompt to one agent. In return, every piece of work has a ticket, the reasoning lives in its comments, and nothing reaches <code>main</code> without you.</p>
+  </section>
+
+  <section class="status wrap" aria-labelledby="status-h">
+    <h2 id="status-h">Where it is now</h2>
+    <p class="body">Chillax is an MVP. Planning, hiring, both gates, the dev loop, QA and the bug loop work and are covered by end-to-end tests. Real agent runs have taken a project from the PM's plan to a tagged release. Next: Jira and GitHub tracker adapters, more agent backends, budgets and crash recovery.</p>
+    <div class="ctas">
+      <a class="btn primary" href="https://github.com/prayushkale/chillax-app">Star on GitHub</a>
+      <a class="btn sponsor" href="https://github.com/sponsors/prayushkale">Sponsor on GitHub</a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot wrap">
+  <p><a href="https://prayush.dev" rel="noopener">Built by Prayush Kale</a></p>
+  <p><a href="https://github.com/prayushkale/chillax-app">GitHub</a> <a href="https://x.com/prayushkale">X</a> <a href="https://github.com/sponsors/prayushkale">Sponsor</a></p>
+</footer>
+
+<script src="/main.js" defer></script>
+</body>
+</html>
