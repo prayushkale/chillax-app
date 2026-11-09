@@ -1,0 +1,23 @@
+# Chillax company workflow. States, allowed transitions, and gates.
+# A transition's `requires` lists facts Chillax must have recorded on the ticket first:
+# tests_pass, review_approved, merged_to_dev, qa_passed.
+# `chillax_owned` moves are made by Chillax, so the stakeholder UIs do not offer them.
+states:
+  - { key: backlog,     owner: project-manager }
+  - { key: ready,       owner: project-manager }       # planned into an approved sprint
+  - { key: in_progress, owner: developer }             # any role tagged developer
+  - { key: in_review,   owner: tech-lead }
+  - { key: in_qa,       owner: qa-engineer }
+  - { key: done }
+transitions:
+  - { from: backlog,     to: ready }
+  - { from: ready,       to: backlog }
+  - { from: ready,       to: in_progress, chillax_owned: true }
+  - { from: in_progress, to: in_review,   requires: [tests_pass], chillax_owned: true }
+  - { from: in_review,   to: in_progress }                    # changes requested
+  - { from: in_review,   to: in_qa,       requires: [review_approved, merged_to_dev], chillax_owned: true }
+  - { from: in_qa,       to: in_progress }                    # bug found
+  - { from: in_qa,       to: done,        requires: [qa_passed], chillax_owned: true }
+gates:
+  sprint_start:  { approver: stakeholder }
+  release:       { approver: stakeholder }

@@ -1,0 +1,25 @@
+[package]
+name = "chillax-server"
+description = "Chillax HTTP API (REST + SSE) and theme server"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+axum.workspace = true
+chrono.workspace = true
+chillax-core.workspace = true
+futures.workspace = true
+rust-embed.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+chillax-store = { path = "../chillax-store" }
+tempfile.workspace = true
+async-trait.workspace = true
+tower.workspace = true

@@ -1,0 +1,21 @@
+# Cargo
+/target
+**/*.rs.bk
+*.pdb
+
+# Chillax runtime state
+.chillax/state/
+.chillax/worktrees/
+
+# Secrets and local config
+.env*
+*.pem
+*.key
+*.db
+.claude/settings.local.json
+
+# Tooling
+node_modules/
+.idea/
+.vscode/
+.DS_Store

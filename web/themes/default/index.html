@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>Chillax</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%234fd1b0'/%3E%3Cpath d='M8 1a7 7 0 0 0 0 14z' fill='%2314171a'/%3E%3C/svg%3E">
+  <script>try{var t=localStorage.getItem("chillax.theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="app">
+    <aside class="side" aria-label="Primary">
+      <div class="brand"><span class="logo" aria-hidden="true"></span><span id="company">Chillax</span></div>
+      <div id="crew" class="crew" role="status" aria-live="off" aria-label="Crew activity" hidden></div>
+      <button id="palette-open" class="palette-hint" type="button" aria-label="Open command palette"><span class="only-rail" data-icon="search"></span><span>Search or jump to…</span><kbd id="palette-kbd">Ctrl K</kbd></button>
+      <nav id="nav" aria-label="Views"></nav>
+      <div class="side-foot">
+        <button id="refresh" type="button" class="ghost" title="Refresh agents: close idle sessions, forget waits and backoff, check rate-limited backends now"><span data-icon="refresh"></span><span class="lbl">Refresh</span></button>
+        <button id="pause" type="button" class="ghost" title="Stop the dev loop: no new work starts and ticket sessions close"><span data-icon="pause"></span><span class="lbl">Pause</span></button>
+        <button id="theme" type="button" class="ghost"><span data-icon="monitor"></span><span class="lbl">Theme: System</span></button>
+        <div id="conn" class="conn connecting" role="status" title="Live connection"><span class="dot"></span><span class="lbl">Connecting</span></div>
+      </div>
+    </aside>
+
+    <div class="stage">
+      <div id="paused-banner" class="banner warn" hidden>The dev loop is paused: no new work starts and ticket sessions are closed.</div>
+      <div id="load-error" class="banner bad" role="alert" hidden></div>
+      <main id="main" tabindex="-1">
+        <p id="loading" class="empty pad">Loading…</p>
+      </main>
+    </div>
+
+    <aside id="drawer" class="drawer" aria-labelledby="drawer-title" hidden>
+      <header class="drawer-head">
+        <div id="drawer-title" class="drawer-title"></div>
+        <button id="drawer-close" type="button" class="icon-btn" aria-label="Close ticket"><span data-icon="x"></span></button>
+      </header>
+      <div id="drawer-body" class="drawer-body"></div>
+    </aside>
+  </div>
+
+  <dialog id="palette" class="palette" aria-label="Command palette">
+    <input id="palette-input" type="text" placeholder="Type a command, ticket or person…" autocomplete="off" role="combobox" aria-expanded="true" aria-controls="palette-list" aria-label="Command palette search">
+    <ul id="palette-list" role="listbox"></ul>
+  </dialog>
+  <dialog id="modal" class="modal"></dialog>
+  <dialog id="persona-dialog" class="modal wide"><article id="review"></article></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

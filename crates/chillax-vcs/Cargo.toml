@@ -1,0 +1,18 @@
+[package]
+name = "chillax-vcs"
+description = "Git implementation of the VcsHost adapter: worktrees, commits, merges, rebases"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+async-trait.workspace = true
+chillax-core.workspace = true
+serde_json.workspace = true
+tokio = { workspace = true, features = ["process", "fs", "time", "sync", "rt"] }
+tracing.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
+tokio.workspace = true

@@ -1,0 +1,21 @@
+[package]
+name = "chillax-store"
+description = "SQLite event log for Chillax"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+async-trait.workspace = true
+chillax-core.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+sqlx.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+chrono.workspace = true
+tempfile.workspace = true
+tokio.workspace = true

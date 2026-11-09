@@ -1,0 +1,21 @@
+[package]
+name = "chillax-tui"
+description = "Chillax terminal UI (Ratatui)"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+chillax-core.workspace = true
+chrono.workspace = true
+crossterm.workspace = true
+futures.workspace = true
+similar.workspace = true
+ratatui.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+unicode-width = "0.2"
+
+[dev-dependencies]
+async-trait.workspace = true

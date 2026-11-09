@@ -1,0 +1,23 @@
+[package]
+name = "chillax-agents"
+description = "ACP client runtime for Chillax employees"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+agent-client-protocol.workspace = true
+async-trait.workspace = true
+chillax-core.workspace = true
+dotenvy.workspace = true
+futures.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+chrono.workspace = true
+tempfile.workspace = true
+toml.workspace = true

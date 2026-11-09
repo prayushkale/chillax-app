@@ -1,0 +1,31 @@
+# Chillax for herdr (docs/herdr.md, ADR 0018). Install: herdr plugin link <this directory>
+id = "chillax.herdr"
+name = "Chillax"
+version = "0.1.0"
+description = "Start Chillax, open its dashboard, switch projects and open employees in panes."
+min_herdr_version = "0.9.0"
+platforms = ["linux", "macos"]
+
+[[actions]]
+id = "start"
+title = "Start Chillax in this pane"
+contexts = ["workspace"]
+command = ["sh", "-c", 'command -v chillax >/dev/null 2>&1 || { echo "chillax is not on PATH; install it with: cargo install --path crates/chillax-cli" >&2; exit 127; }; exec chillax herdr start']
+
+[[actions]]
+id = "dashboard"
+title = "Open the Chillax dashboard"
+contexts = ["workspace"]
+command = ["sh", "-c", 'command -v chillax >/dev/null 2>&1 || { echo "chillax is not on PATH; install it with: cargo install --path crates/chillax-cli" >&2; exit 127; }; exec chillax herdr dashboard']
+
+[[actions]]
+id = "switch-project"
+title = "Switch to a Chillax project"
+contexts = ["workspace"]
+command = ["sh", "-c", 'command -v chillax >/dev/null 2>&1 || { echo "chillax is not on PATH; install it with: cargo install --path crates/chillax-cli" >&2; exit 127; }; exec chillax herdr pick project']
+
+[[actions]]
+id = "open-employee"
+title = "Open a Chillax employee"
+contexts = ["workspace"]
+command = ["sh", "-c", 'command -v chillax >/dev/null 2>&1 || { echo "chillax is not on PATH; install it with: cargo install --path crates/chillax-cli" >&2; exit 127; }; exec chillax herdr pick employee']

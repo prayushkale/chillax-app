@@ -1,0 +1,62 @@
+[workspace]
+resolver = "3"
+members = ["crates/*"]
+default-members = ["crates/chillax-cli"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.94"
+license = "MIT"
+repository = "https://github.com/prayushkale/chillax-app"
+
+[workspace.dependencies]
+chillax-core = { path = "crates/chillax-core" }
+chillax-store = { path = "crates/chillax-store" }
+chillax-agents = { path = "crates/chillax-agents" }
+chillax-catalog = { path = "crates/chillax-catalog" }
+chillax-tracker = { path = "crates/chillax-tracker" }
+chillax-mcp = { path = "crates/chillax-mcp" }
+chillax-server = { path = "crates/chillax-server" }
+chillax-tui = { path = "crates/chillax-tui" }
+chillax-vcs = { path = "crates/chillax-vcs" }
+chillax-dispatch = { path = "crates/chillax-dispatch" }
+
+agent-client-protocol = { version = "3.4", features = ["process", "stdio", "unstable_end_turn_token_usage"] }
+anyhow = "1"
+async-trait = "0.1"
+axum = "0.8"
+chrono = { version = "0.4", features = ["serde"] }
+clap = { version = "4", features = ["derive"] }
+crossterm = { version = "0.29.0", features = ["event-stream"] }
+dotenvy = "0.15"
+futures = "0.3"
+# unstable-rendered-line-info: Paragraph::line_count, used once to size the ticket panel.
+ratatui = { version = "0.30.2", features = ["unstable-rendered-line-info"] }
+reqwest = { version = "0.13", default-features = false, features = ["json"] }
+rmcp = { version = "3.5", features = ["server", "transport-streamable-http-server"] }
+rust-embed = "8"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_yaml = "0.9"
+sha2 = "0.11"
+similar = "2"
+sqlx = { version = "0.9", default-features = false, features = ["runtime-tokio", "sqlite"] }
+tempfile = "3"
+thiserror = "2"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "sync", "time", "signal", "process", "io-util", "net", "fs"] }
+tokio-stream = { version = "0.1", features = ["sync"] }
+toml = "1"
+toml_edit = { version = "0.25", default-features = false, features = ["parse", "display"] }
+sysinfo = { version = "0.39", default-features = false, features = ["system"] }
+tower = "0.5"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+uuid = { version = "1", features = ["v4"] }
+
+# See https://ratatui.rs/recipes/apps/release-your-app/#optimizations
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"
+strip = true

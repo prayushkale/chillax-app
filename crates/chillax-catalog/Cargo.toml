@@ -1,0 +1,23 @@
+[package]
+name = "chillax-catalog"
+description = "Persona catalogs for hiring: git checkout, index, injection scan, review drafts"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+async-trait.workspace = true
+chillax-core.workspace = true
+chrono.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+serde_yaml.workspace = true
+similar.workspace = true
+tokio = { workspace = true, features = ["process", "fs", "time", "sync", "rt"] }
+tracing.workspace = true
+uuid.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
+tokio.workspace = true
