@@ -28,20 +28,39 @@ has had real-world use; failure handling is covered by tests, not by much produc
   worktrees, but the agents run commands. Read the permission
   prompts in the Inbox.
 - macOS and Linux only; Windows is not supported.
-- The API (`/api/v1`) and event schema are additive-only, but the project has no tagged
-  releases yet. Install from `main`.
+- The API (`/api/v1`) and event schema are additive-only.
 
 ## Install
 
 You need:
 
-- Rust 1.94 or newer
 - git
 - Node.js (the Claude Code adapter is fetched with `npx`)
 - a Claude Code login, or `ANTHROPIC_API_KEY`
 
+Install a prebuilt binary (macOS and Linux, arm64 and x86_64):
+
+```sh
+brew install prayushkale/tap/chillax
+```
+
+or, without Homebrew:
+
+```sh
+curl --proto '=https' --tlsv1.2 -LsSf https://github.com/prayushkale/chillax-app/releases/latest/download/chillax-installer.sh | sh
+```
+
+The script puts `chillax` in `~/.cargo/bin`; add that folder to your `PATH` if it is not there already.
+
+To build from source instead, you need Rust 1.94 or newer:
+
 ```sh
 cargo install --git https://github.com/prayushkale/chillax-app --locked chillax
+```
+
+Then:
+
+```sh
 chillax doctor     # checks git, config, roles, and runs an ACP handshake per agent
 chillax            # TUI + web UI at http://127.0.0.1:4747
 ```
